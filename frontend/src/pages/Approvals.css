@@ -1,0 +1,24 @@
+.approvals-page {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.actions-cell {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.actions-cell .btn {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.empty-icon {
+  margin-bottom: 1rem;
+}
