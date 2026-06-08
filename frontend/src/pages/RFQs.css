@@ -1,0 +1,122 @@
+.table-toolbar {
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--surface-light);
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-light);
+  border-radius: var(--border-radius-sm);
+  padding: 0.5rem 1rem;
+  width: 300px;
+  border: 1px solid var(--border-color);
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  margin-left: 0.5rem;
+  color: var(--text-dark);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.empty-icon {
+  color: var(--text-muted);
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: var(--text-muted);
+}
+
+.rfq-row {
+  cursor: pointer;
+}
+
+.rfq-title {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.2rem;
+}
+
+.rfq-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.rfq-modal {
+  max-width: 700px;
+}
+
+.items-section {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px dashed var(--border-color);
+}
+
+.items-section h3 {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-dark);
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.item-row {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.item-name { flex: 3; }
+.item-qty { flex: 1; min-width: 80px; }
+.item-unit { flex: 1; min-width: 100px; }
+
+.add-item-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  width: auto;
+  display: inline-block;
+  margin-bottom: var(--spacing-md);
+}
+
+.status-open {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-closed {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-awarded {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}

@@ -1,0 +1,59 @@
+.quote-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.quote-amount {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.quote-modal {
+  max-width: 700px;
+}
+
+.pricing-grid-header {
+  display: flex;
+  background-color: var(--background-light);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-grid-header > div:nth-child(1) { flex: 3; }
+.pricing-grid-header > div:nth-child(2) { flex: 1; text-align: center; }
+.pricing-grid-header > div:nth-child(3) { flex: 2; text-align: right; }
+.pricing-grid-header > div:nth-child(4) { flex: 2; text-align: right; }
+
+.pricing-row {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pricing-name { flex: 3; font-weight: 500; }
+.pricing-qty { flex: 1; text-align: center; color: var(--text-muted); }
+.pricing-input { flex: 2; text-align: right; }
+.pricing-input input { width: 100px; text-align: right; }
+.pricing-total { flex: 2; text-align: right; font-weight: 600; color: var(--primary-color); }
+
+.grand-total-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  border-top: 2px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.grand-total-row .grand-total-val {
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-left: 1rem;
+  width: 120px;
+  text-align: right;
+}
